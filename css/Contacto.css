@@ -1,0 +1,50 @@
+.formularioContacto{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 700px;
+    margin: 0 auto;
+    border-radius: 2%;
+    
+}
+
+.botonContacto{
+    min-width: 120px ;
+    justify-content: center;
+    margin: 0 auto;
+
+}
+
+.iconosContacto{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.contenedorContacto{
+    background-color: rgba(0, 0, 0, 0.728);
+    border-radius: 2%;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.contactoH2{
+    padding: 0;
+    font-size: 3rem;
+}
+
+i{
+color: white;
+
+}
+i:hover{
+    color:#343759;
+    transform: scale(1.5);
+    transition: 0,8s;
+    
+}

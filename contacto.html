@@ -1,92 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>El comienzo de algo grande</title>
 
-    <!--Prefetch-->
-    <link rel="prefetch" href="nosotros.html" as="document" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>El comienzo de algo grande</title>
 
-    <!--link estilo2-->
-    <link rel="stylesheet" href="css/estilo2.css" />
+  <!--Prefetch-->
+  <link rel="prefetch" href="nosotros.html" as="document" />
 
-    <!--Link Preload-->
-    <link rel="prereload" href="css/normalize.css" as="style" />
-    <link rel="stylesheet" href="css/normalize.css" />
+  <!--link estilo2-->
+  <link rel="stylesheet" href="css/estilo2.css" />
 
-    <!--Link fuente Noto Serif italica-->
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&display=swap"
-      rel="stylesheet"
-    />
-    <!--Link fuente Noto Serif -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap"
-      rel="stylesheet"
-    />
+  <!--Link Preload-->
+  <link rel="prereload" href="css/normalize.css" as="style" />
+  <link rel="stylesheet" href="css/normalize.css" />
 
-    <!-- <link rel="prereload" href="css/style.css" as="style">-->
-    <link rel="stylesheet" href="css/style.css" />
+  <!--Link fuente Noto Serif italica-->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&display=swap" rel="stylesheet" />
+  <!--Link fuente Noto Serif -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet" />
 
-    <!--script iconos-->
-    <script src="https://kit.fontawesome.com/4fcd992977.js" crossorigin="anonymous"></script>
+  <!-- <link rel="prereload" href="css/style.css" as="style">-->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="/css/Contacto.css">
+
+  <!--script iconos-->
+  <script src="https://kit.fontawesome.com/4fcd992977.js" crossorigin="anonymous"></script>
 
 </head>
- 
+
 <body>
-    <header class="header ">
-        <div class="pegado barra" id="background">
-            <a class="logo" href="index.html">
-                <h1 class="logo__nombre no-margin centrar-texto"> Your<span class="logo__bold">Time</span></h1>
-            </a>
+  <header class="header ">
+    <div class="pegado barra" id="background">
+      <a class="logo" href="index.html">
+      <h1 class="logo__nombre no-margin centrar-texto"> Your<span class="logo__bold">Time</span></h1>
+      </a>
 
-            <span class="nav-bar" id="btnMenu"><i class="fa-solid fa-bars"></i></span>
+      <span class="nav-bar" id="btnMenu"><i class="fa-solid fa-bars"></i></span>
 
-            <nav class="navegacion topbar menu" id="menu">
-                <a href="nosotros.html" class="navegacion__enlace menu__item"><span class="menu__link"> Nosotros</span></a>
-                <a href="memresia.html" class="navegacion__enlace menu__item"><span class="menu__link">Membresia</span></a>
-                <a href="contacto.html" class="navegacion__enlace menu__item"><span class="menu__link">Categoria</span></a>
-                <a href="menu.html" class="navegacion__enlace menu__item"><span class="menu__link">Menu</span></a>
-            </nav>
-        </div>
-        <div class="header__texto">
-            <!--se encarga pablito de que quede bien en pantallas de celulares-->
-            <h2 class="no-margin">Las Mejores Recetas</h2>
-            <p class="no-margin">Aprende de los expertos con las mejores recetas y consejos</p>
+      <nav class="navegacion topbar menu" id="menu">
+        <a href="nosotros.html" class="navegacion__enlace menu__item"><span class="menu__link"> Nosotros</span></a>
+        <a href="memresia.html" class="navegacion__enlace menu__item"><span class="menu__link">Membresia</span></a>
+        <a href="contacto.html" class="navegacion__enlace menu__item"><span class="menu__link">Categoria</span></a>
+        <a href="menu.html" class="navegacion__enlace menu__item"><span class="menu__link">Menu</span></a>
+      </nav>
+    </div>
+    <div class="header__texto">
+      
+      <div class="contenedorContacto">
+        <h2 class="contactoH2"> ¡Seguinos en nuestras redes sociales! </h2>
+        <ul class="iconosContacto">
+        
+          <li><a class="" href=""><i class=" fa-brands fa-twitter fa-2xl "></i></a></li>
+          <li><a class="" href=""><i class=" fa-brands fa-facebook fa-2xl"></i></a></li>
+          <li><a class="" href=""><i class=" fa-brands fa-instagram-square fa-2xl"></i></a></li>
+        </ul>
 
-        </div>
-    </header>
+        <h2 class="contactoH2">Danos tu opinión </h2>
+        <form class="formularioContacto" action=" ">
+          <div>
+            <label for="">Nombre y apellido</label>
+            <input required type="text">
+          </div>
+          <div>
+            <label for="">Email</label>
+            <input required type="email">
+          </div>
 
-    <main>
+          <div>
+            <label for="">Comentarios</label>
+            <textarea name="comentarios" id="" cols="70" rows="8"></textarea>
+          </div>
+          <button class="botonContacto" type="submit"> Enviar </button>
+        </form>
 
-    </main>
 
-    <footer class="footer">
-      <div class="barra">
-        <a class="logo logo__footer" href="index.html">
-          <h1 class="logo__nombre no-margin centrar-texto">
-            Your<span class="logo__bold">Time</span>
-          </h1>
-        </a>
-        <nav class="nav-footer topbar">
-          <a href="donacion.html" class="navegacion__enlace"
-            ><span>Donacion</span></a
-          >
-          <a href="salud.html" class="navegacion__enlace"
-            ><span>Salud y Nutricion</span></a
-          >
-          <a href="contacto.html" class="navegacion__enlace"
-            ><span>Contacto</span></a
-          >
-        </nav>
+
+
+
+
+
+
+
       </div>
-    </footer>
+    </div>
+  </header>
 
-    <script src="js/acciones.js"></script>
+  <main>
+
+  </main>
+
+  <footer class="footer">
+    <div class="barra">
+      <a class="logo logo__footer" href="index.html">
+        <h1 class="logo__nombre no-margin centrar-texto">
+          Your<span class="logo__bold">Time</span>
+        </h1>
+      </a>
+      <nav class="nav-footer topbar">
+        <a href="donacion.html" class="navegacion__enlace"><span>Donacion</span></a>
+        <a href="salud.html" class="navegacion__enlace"><span>Salud y Nutricion</span></a>
+        <a href="contacto.html" class="navegacion__enlace"><span>Contacto</span></a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/acciones.js"></script>
 
 </body>
 

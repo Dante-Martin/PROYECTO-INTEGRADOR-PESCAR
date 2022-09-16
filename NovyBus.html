@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>El comienzo de algo grande</title>
+
+    <!--Prefetch-->
+    <link rel="prefetch" href="nosotros.html" as="document" />
+
+    <!--link estilo2-->
+    <link rel="stylesheet" href="css/estilo2.css" />
+
+    <!--Link Preload-->
+    <link rel="prereload" href="css/normalize.css" as="style" />
+    <link rel="stylesheet" href="css/normalize.css" />
+
+    <!--Link fuente Noto Serif italica-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <!--Link fuente Noto Serif -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- <link rel="prereload" href="css/style.css" as="style">-->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!--script iconos-->
+    <script
+      src="https://kit.fontawesome.com/4fcd992977.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="pegado barra" id="background">
+        <a class="logo" href="index.html">
+          <h1 class="logo__nombre no-margin ">
+            <!-- Your<span class="logo__bold">Time</span> -->
+            <img src="img/Logo.png" class="logo__size">
+          </h1>
+        </a>
+  
+        <span class="nav-bar" id="btnMenu"><i class="fa-solid fa-bars"></i></span>
+  
+        <nav class="navegacion topbar menu" id="menu">
+          <a href="nosotros.html" class="navegacion__enlace menu__item"><span class="menu__link">Nosotros</span></a>
+          <a href="membresia.html" class="navegacion__enlace menu__item"><span class="menu__link">Membresia</span></a>
+          <a href="index.html" class="navegacion__enlace menu__item"><span class="menu__link">Menu</span></a>
+        </nav>
+      </div>
+      <div class="header__texto">
+        <h2 class="no-margin">Las Mejores Recetas</h2>
+        <p class="no-margin">
+          Aprende de los expertos con las mejores recetas y consejos
+        </p>
+      </div>
+    </header>
+
+    <main>
+      <section class="contenedor">
+        <h3>Novedades</h3>
+        <div class="tres-columnas">
+          <!--EMPIEZA NOVEDADES-->
+          <article class="entrada">
+            <div class="entrada__imagen">
+              <picture>
+                <img
+                  loading="lazy"
+                  src="img/lasana-bolonesa-lentejas-recetas-cocina.jpg"
+                  alt="lasana-bolonesa-lentejas-recetas-cocina"
+                />
+                <div class="capa">
+                  <h4 class="no-margin">Lasana Bolonesa</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Aut pariatur repellendus fugit quisquam impedit quia?
+                    Doloribus est molestias, enim laboriosam esse maiores nobis
+                    ullam et nesciunt tenetur, impedit magnam mollitia.
+                  </p>
+                </div>
+              </picture>
+            </div>
+
+            <div class="entrada__contenido">
+              <h4 class="no-margin">Lasana Bolonesa</h4>
+              <a href="entrada.html" class="boton boton--primario">Ver Mas</a>
+            </div>
+          </article>
+
+          <article class="entrada">
+            <div class="entrada__imagen">
+              <picture>
+                <img
+                  loading="lazy"
+                  src="img/hamburguesa-garbanzos2.jpg"
+                  alt="Hamburguesa de garbanzos"
+                />
+                <div class="capa">
+                  <h4 class="no-margin">Hamburguesa de garbanzos</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Aut pariatur repellendus fugit quisquam impedit quia?
+                    Doloribus est molestias, enim laboriosam esse maiores nobis
+                    ullam et nesciunt tenetur, impedit magnam mollitia.
+                  </p>
+                </div>
+              </picture>
+            </div>
+
+            <div class="entrada__contenido">
+              <h4 class="no-margin">Hamburguesa de garbanzos</h4>
+              <a href="entrada.html" class="boton boton--primario">Ver Mas</a>
+            </div>
+          </article>
+
+          <article class="entrada">
+            <div class="entrada__imagen">
+              <picture>
+                <img
+                  loading="lazy"
+                  src="img/hamburguesa de alubias y soja.jpg"
+                  alt="Hamburguesa de alubias y soja"
+                />
+                <div class="capa">
+                  <h4 class="no-margin">Hamburguesa De alubias</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Aut pariatur repellendus fugit quisquam impedit quia?
+                    Doloribus est molestias, enim laboriosam esse maiores nobis
+                    ullam et nesciunt tenetur, impedit magnam mollitia.
+                  </p>
+                </div>
+              </picture>
+            </div>
+
+            <div class="entrada__contenido">
+              <h4 class="no-margin">Hamburguesa de alubias</h4>
+              <a href="entrada.html" class="boton boton--primario">Ver Mas</a>
+            </div>
+          </article>
+        </div>
+        <!--TERMINA NOVEDADES-->
+      </section>
+
+      <section class="separador"></section>
+
+      <section class="contenedor">
+        <h5>Lo mas buscado</h5>
+        <div class="tres-columnas">
+          <article class="entrada">
+            <div class="entrada__imagen">
+              <picture>
+                <img loading="lazy" src="img/pasta.jpeg" alt="imagen Pasta" />
+                <div class="capa">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Aut pariatur repellendus fugit quisquam impedit quia?
+                    Doloribus est molestias, enim laboriosam esse maiores nobis
+                    ullam et nesciunt tenetur, impedit magnam mollitia.
+                  </p>
+                </div>
+              </picture>
+            </div>
+            <div class="entrada__contenido">
+              <h4 class="no-margin">Pasta con Camarones</h4>
+              <a href="entrada.html" class="boton boton--primario">Ver Mas</a>
+            </div>
+          </article>
+
+          <article class="entrada">
+            <div class="entrada__imagen">
+              <picture>
+                <img loading="lazy" src="img/pasta.jpeg" alt="imagen Pasta" />
+                <div class="capa">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Aut pariatur repellendus fugit quisquam impedit quia?
+                    Doloribus est molestias, enim laboriosam esse maiores nobis
+                    ullam et nesciunt tenetur, impedit magnam mollitia.
+                  </p>
+                </div>
+              </picture>
+            </div>
+            <div class="entrada__contenido">
+              <h4 class="no-margin">Pasta con Camarones</h4>
+              <a href="entrada.html" class="boton boton--primario">Ver Mas</a>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="barra">
+          <!-- <a class="logo logo__footer" href="index.html">
+              <h1 class="logo__nombre no-margin centrar-texto">
+                  Your<span class="logo__bold">Time</span>
+              </h1>
+          </a> -->
+          <nav class="nav-footer topbar">
+              <a href="donacion.html" class="navegacion__enlace"><span>Donacion</span></a>
+              <a href="salud.html" class="navegacion__enlace"><span>Salud y Nutricion</span></a>
+              <a href="contacto.html" class="navegacion__enlace"><span>Contacto</span></a>
+          </nav>
+          <span class="copyright">&#169; 2022 PURA_SANGRE papá!!</span>
+
+      </div>
+    </footer>
+
+    <script src="js/acciones.js"></script>
+  </body>
+</html>

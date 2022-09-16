@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El comienzo de algo grande</title>
+    <!--Prefetch-->
+    <link rel="prefetch" href="nosotros.html" as="document" />
+
+    <!--link estilo2-->
+    <link rel="stylesheet" href="css/estilo2.css" />
+
+    <!--Link Preload-->
+    <link rel="prereload" href="css/normalize.css" as="style" />
+    <link rel="stylesheet" href="css/normalize.css" />
+
+    <!--Link fuente Noto Serif italica-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&display=swap" rel="stylesheet" />
+    <!--Link fuente Noto Serif -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet" />
+
+    <!-- <link rel="prereload" href="css/style.css" as="style">-->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="stylesheet" href="css/TuReceta.css">
+
+    <!--script iconos-->
+    <script src="https://kit.fontawesome.com/4fcd992977.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="header2">
+        <div class="pegado barra" id="background">
+            <a class="logo" href="index.html">
+                <h1 class="logo__nombre no-margin ">
+                    <!-- Your<span class="logo__bold">Time</span> -->
+                    <img src="img/Logo.png" class="logo__size">
+                </h1>
+            </a>
+
+            <span class="nav-bar" id="btnMenu"><i class="fa-solid fa-bars"></i></span>
+
+            <nav class="navegacion topbar menu" id="menu">
+                <a href="login.html" class="navegacion__enlace menu__item"><span class="menu__link">Login</span></a>
+                <a href="nosotros.html" class="navegacion__enlace menu__item"><span class="menu__link">Nosotros</span></a>
+                <a href="membresia.html" class="navegacion__enlace menu__item"><span class="menu__link">Membresia</span></a>
+                <a href="index.html" class="navegacion__enlace menu__item"><span class="menu__link">Menu</span></a>
+            </nav>
+        </div>
+        <div class="header__texto">
+            <h2 class="no-margin" id="nombre">Lasana Bolonesa</h2>
+
+            </p>
+        </div>
+    </header>
+    <main>
+        <section class="contenedor">
+
+            <div class="una-columna">
+                <!--EMPIEZA NOVEDADES-->
+
+                <article class="entrada__imagen2">
+
+                    <picture>
+                        <img loading="lazy" src="img/0100.jpg" alt="" id="foto" />
+                    </picture>
+                    <ul class="ingredientes" id="lista-ingrediente">
+                        <!-- <li>
+                            <input type="checkbox" onclick='check(this)' id="ingrediente-0">
+                            <label for="ingrediente-0">2 tazas de Avena </label>
+                        </li> -->
+
+                        <li id="barraProgreso">
+                            <div id="barra"></div>
+                        </li>
+                    </ul>
+
+
+                </article>
+                <p id="procedimiento_p">
+                    <!-- Paso 1:
+                    <br>
+                    Cortamos 2 berenjenas por la mitad y les hacemos cortes en forma de rejilla. Las regamos con
+                    un poco de aceite de oliva
+                    y las horneamos 45 minutos a 200º. A continuación, las vaciamos con ayuda de una cuchara y
+                    reservamos la carne.
+                    <br>
+                    Paso 2:
+                    <br>
+                    En una sartén con aceite de oliva , pochamos 10 minutos 1 cebolla picada con sal. Añadimos
+                    la carne de las berenjenas, 2
+                    latas de atún escurridas, 1 cdta. de comino, 1 cdta. de pimentón dulce, sal y pimienta.
+                    Mezclamos bien y añadimos 50 ml.
+                    de tomate frito. Removemos de nuevo y cocinamos 5 minutos.
+                    <br>
+                    Paso 3:
+                    <br>
+                    Rellenamos las berenjenas con la mezcla queso especial para gratinar(Mozzarella) Gratinamos
+                    5 minutos a 200º. -->
+                </p>
+
+
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="barra">
+            <!-- <a class="logo logo__footer" href="index.html">
+                <h1 class="logo__nombre no-margin centrar-texto">
+                    Your<span class="logo__bold">Time</span>
+                </h1>
+            </a> -->
+            <nav class="nav-footer topbar">
+                <a href="donacion.html" class="navegacion__enlace"><span>Donacion</span></a>
+                <a href="salud.html" class="navegacion__enlace"><span>Salud y Nutricion</span></a>
+                <a href="contacto.html" class="navegacion__enlace"><span>Contacto</span></a>
+            </nav>
+            <span class="copyright">&#169; 2022 PURA_SANGRE papá!!</span>
+
+        </div>
+    </footer>
+    <script src="js/acciones.js"></script>
+    <script src="js/recetas.js"></script>
+    <script>
+        document.getElementById('nombre').innerHTML = localStorage.getItem('nombre'); //agarro el nombre del array recetas con set item y lo traigo a esta pagina con get-item y lo pongo en la id nombre de h2
+        // ---------------------------------
+
+        let cantidadIngrediente = 0;
+        let width = 0;
+        // document.getElementById('nombre');
+
+        let ingrediente = localStorage.getItem('ingredientes');
+        console.log(ingrediente);
+        let ingrediente_array = ingrediente.split(',');
+
+        cantidadIngrediente = ingrediente_array.length;
+
+        for (let q in ingrediente_array) {
+
+            console.log(q + ':', ingrediente_array[q]);
+            var li = document.createElement('li');
+            var ul = document.getElementById('lista-ingrediente');
+            // ul.appendChild(li);
+
+            var input = document.createElement('input');
+            input.type = "checkbox";
+            input.onclick = function () {
+                check(this);
+            };
+
+            var label = document.createElement('label');
+            label.textContent = " " + ingrediente_array[q];
+
+            label.insertAdjacentElement("afterbegin", input); //pone el input a la izq del label
+            li.appendChild(label);
+            ul.insertAdjacentElement("afterbegin", li);// lo pone a acontinuacion del label
+        }
+
+
+        function check(pepe) { //barra de progreso
+            if (pepe.checked) {
+                width = width + Math.round(100 / cantidadIngrediente * 10) / 10;
+
+            } else {
+                width = width - Math.round(100 / cantidadIngrediente * 10) / 10;
+            }
+            //cuando hay mas de 5 recetas, empezas a destildar la checkbox y te queda la barra de progreso marcada. Entoces le decimos que si el ancho es menor a 5 que lo fuerze a 0 para que no pinte la barra.
+            if (width < 5) {
+                width = 0;
+            }
+            const barra = document.querySelector('#barra');
+            barra.style.width = width + "%";
+            barra.style.transition = "width 1s";
+            console.log(cantidadIngrediente, width);
+        }
+        // ---------------------------------
+        let fotos = localStorage.getItem('foto');
+        document.getElementById('foto').src = "img/" + fotos;
+        // ---------------------------------
+        let procedimiento = localStorage.getItem('procedimientos');
+        console.log(procedimiento);
+        procedimiento = procedimiento.replaceAll(/(Paso [0-9]:)(?!.*\1)/g, '<br>$1<br>');
+        document.getElementById('procedimiento_p').innerHTML = procedimiento;
+
+
+
+    </script>
+</body>
+
+</html>

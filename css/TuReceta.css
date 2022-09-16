@@ -1,0 +1,56 @@
+.header2 {
+  height: 50vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  /* backface-visibility: hidden; */
+  animation: header 50s linear infinite 3s;
+  animation-timing-function: ease-in-out;
+  background-image: url("../img/zyro-image.png");
+}
+.logo__size {
+  height: 63px;
+  margin-left: 20px;
+}
+/* .una-columna {
+  /* display: flex; */
+
+.entrada__imagen2 {
+  display: flex;
+  flex-wrap: wrap;
+}
+.entrada__imagen2 picture img {
+  width: 400px;
+  margin-top: 5vh;
+
+  transition: all 500ms ease-out;
+}
+.ingredientes {
+  display: table;
+  /* position: absolute; */
+  height: 12rem;
+  text-align: left;
+  margin-top: 5vh;
+  list-style: none;
+}
+#barraProgreso {
+  background-color: rgb(85, 83, 83);
+  height: 30px;
+  position: relative;
+  width: 100%;
+  min-width: min(65vw, 300px);
+}
+#barra {
+  background-color: #343759;
+  height: 30px;
+  position: absolute;
+  width: 0%;
+}
+.copyright {
+  color: #ffffff;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column-reverse;
+  font-size: smaller;
+}

@@ -1,0 +1,315 @@
+html {
+  scroll-behavior: smooth;
+  /* relentiza el scrool automatico ejecutado cuando elijen que filtro usar */
+}
+
+.logo__size {
+  height: 63px;
+  margin-left: 20px;
+}
+
+.label {
+  /* le digo que tiene que hacer*/
+
+  cursor: pointer;
+  pointer-events: all;
+  font-size: 260%;
+}
+.icono--boton {
+  font-size: 260%;
+}
+.icono--boton:hover {
+  transition: 1s;
+  color: #343759; /*#ff0000*/
+  display: block;
+}
+
+
+.iconos-alineados {
+    display: flex;
+    align-items: center;
+    padding-top: 15vh;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+@media (min-width: 500px) {
+  .tiempo {
+    text-transform: uppercase; /* texto en mayuscula*/
+    color: rgba(255, 255, 255, 0.8);
+    display: inline-block; /*especifica el comportamiento de visualización como contenedor de bloque de nivel en linea */
+    cursor: pointer; /*cuando el mause se posiciona sobre el elemento indica un link*/
+    pointer-events: none; /* el link no te redirecciona a otra paguina*/
+    min-width: 120px;
+  }
+
+  .tiempo:hover {
+    pointer-events: all; /* mantiene activo el hover cuando te mantenes en el bloque*/
+  }
+
+  .item {
+    position: relative;
+    display: block;
+    margin-right: 30px;
+    top: 10px;
+    opacity: 0;
+    text-align: right;
+    transition: opacity 0.5s ease, top 0.5s ease;
+    transition-delay: 0;
+    font-size: small;
+  }
+  span {
+    transition: color 0.5s ease;
+  }
+  .item:hover span {
+    color: #343759;
+  }
+
+  .tiempo:hover .item {
+    opacity: 1;
+    visibility: visible;
+    top: 0px;
+  }
+  .item:nth-child(1):hover,
+  .item:nth-child(2):hover,
+  .item:nth-child(3):hover,
+  .item:nth-child(4):hover {
+    font-size: medium;
+  }
+  .item:nth-child(1) {
+    transition-delay: 0.45s;
+  }
+  .item:nth-child(2) {
+    transition-delay: 0.4s;
+  }
+  .item:nth-child(3) {
+    transition-delay: 0.35s;
+  }
+  .item:nth-child(4) {
+    transition-delay: 0.3s;
+  }
+  .item:nth-child(5) {
+    transition-delay: 0.25s;
+  }
+  .item:nth-child(6) {
+    transition-delay: 0.2s;
+  }
+
+  .tiempo:hover .item:nth-child(1) {
+    transition-delay: 0.25s;
+  }
+  .tiempo:hover .item:nth-child(2) {
+    transition-delay: 0.3s;
+  }
+  .tiempo:hover .item:nth-child(3) {
+    transition-delay: 0.35s;
+  }
+  .tiempo:hover .item:nth-child(4) {
+    transition-delay: 0.4s;
+  }
+  .tiempo:hover .item:nth-child(5) {
+    transition-delay: 0.45s;
+  }
+  .tiempo:hover .item:nth-child(6) {
+    transition-delay: 0.5s;
+  }
+
+  .canasta {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.8);
+    box-sizing: border-box;
+    min-width: 120px;
+    transition: all;
+  }
+
+  .buscar--texto {
+    transition: width 2s;
+    visibility: hidden;
+    width: 0;
+  }
+  .buscar--texto--abierto {
+    visibility: visible;
+    width: 17rem;
+    transition: width 2s;
+  }
+
+  .lupa {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.8);
+    box-sizing: border-box;
+    min-width: 120px;
+  }
+  .iconos-alineados {
+    display: flex;
+    align-items: flex-start;
+    flex-direction:row;
+    padding-top: 25vh;
+    justify-content: space-around;
+
+
+  }
+  input[type="text"] {
+    /*solo para input y se escribe texto*/
+    padding: 1px;
+    border-radius: 9px;
+    outline: none; /* necesario para que el focus cambie el borde*/
+    border: 2px solid white;
+    text-transform: lowercase; /*transforma el texto en minusculas*/
+  }
+  input[type="text"]:focus {
+    /*para cambiar el color al borde del input cuando esta seleccionado*/
+    border: 2px solid white;
+  }
+}
+
+/*----------------------------RESPONSIVE-----------------------*/
+
+@media (max-width: 460px) {
+  .label {
+    font-size: 200%;
+  }
+  .icono--boton {
+    font-size: 200%;
+  }
+  .tiempo {
+    text-transform: uppercase; /* texto en mayuscula*/
+    color: rgba(255, 255, 255, 0.8);
+    display: inline-block; /*especifica el comportamiento de visualización como contenedor de bloque de nivel en linea */
+    cursor: pointer; /*cuando el mause se posiciona sobre el elemento indica un link*/
+    pointer-events: none; /* el link no te redirecciona a otra paguina*/
+    min-height: 124px;
+    min-width: 120px;
+  }
+  .tiempo:hover {
+    pointer-events: all;
+  }
+  .item {
+    position: relative;
+    display: block;
+    margin-right: 30px;
+    top: 10px;
+    opacity: 0;
+    text-align: right;
+    transition: opacity 0.5s ease, top 0.5s ease;
+    transition-delay: 0;
+    font-size: small;
+  }
+  span {
+    transition: color 0.5s ease;
+  }
+  .tiempo:hover .item {
+    opacity: 1;
+    visibility: visible;
+    top: 0px;
+  }
+  .item:nth-child(1):hover,
+  .item:nth-child(2):hover,
+  .item:nth-child(3):hover,
+  .item:nth-child(4):hover {
+    font-size: medium;
+    color: #343759;
+  }
+  .item:nth-child(1) {
+    transition-delay: 0.45s;
+  }
+  .item:nth-child(2) {
+    transition-delay: 0.4s;
+  }
+  .item:nth-child(3) {
+    transition-delay: 0.35s;
+  }
+  .item:nth-child(4) {
+    transition-delay: 0.3s;
+  }
+  .item:nth-child(5) {
+    transition-delay: 0.25s;
+  }
+  .item:nth-child(6) {
+    transition-delay: 0.2s;
+  }
+
+  .tiempo:hover .item:nth-child(1) {
+    transition-delay: 0.25s;
+  }
+  .tiempo:hover .item:nth-child(2) {
+    transition-delay: 0.3s;
+  }
+  .tiempo:hover .item:nth-child(3) {
+    transition-delay: 0.35s;
+  }
+  .tiempo:hover .item:nth-child(4) {
+    transition-delay: 0.4s;
+  }
+  .tiempo:hover .item:nth-child(5) {
+    transition-delay: 0.45s;
+  }
+  .tiempo:hover .item:nth-child(6) {
+    transition-delay: 0.5s;
+  }
+  .canasta {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+
+    color: rgba(255, 255, 255, 0.8);
+    box-sizing: border-box;
+    text-align: center;
+    transition: all;
+    min-width: 120px;
+    min-height: 124px;
+  }
+
+  .buscar--texto {
+    transition: width 2s;
+    visibility: hidden;
+    width: 0;
+  }
+  .buscar--texto--abierto {
+    visibility: visible;
+    width: 17rem;
+    transition: width 2s;
+  }
+
+  .lupa {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.8);
+    box-sizing: border-box;
+    min-width: 120px;
+  }
+
+  input[type="text"] {
+    /*solo para input y se escribe texto*/
+    padding: 1px;
+    border-radius: 9px;
+    outline: none; /* necesario para que el focus cambie el borde*/
+    border: 2px solid white;
+    height: fit-content;
+    text-transform: lowercase;
+  }
+  input[type="text"]:focus {
+    /*para cambiar el color al borde del input cuando esta seleccionado*/
+    border: 2px solid white;
+  }
+}
+
+.entrada:nth-child(1){
+    margin-top: 3rem;
+  }
+
+@media (min-width: 800px) {
+  .entrada:nth-child(1),
+  .entrada:nth-child(2),
+  .entrada:nth-child(3){
+    margin-top: 3rem;
+  }
+}

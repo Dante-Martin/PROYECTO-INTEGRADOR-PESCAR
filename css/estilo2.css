@@ -40,6 +40,11 @@ body {
   border-bottom-color: bisque;
 }
 
+.logo__size {
+  height: 63px;
+  margin-left: 20px;
+}
+
 .navegacion__enlace {
   display: block;
   text-align: center;
@@ -108,4 +113,16 @@ body {
 
   background-color: gray;
   padding: 15vh;
+}
+
+
+/*FOOTER*/
+
+.copyright {
+  color: #ffffff;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column-reverse;
+  font-size: smaller;
 }

@@ -25,7 +25,6 @@ body {
   font-family: var(--fuenteParrafos);
   font-size: 1.6rem;
   line-height: 2;
-  
 }
 
 /*Globales*/
@@ -52,7 +51,11 @@ h1 {
   font-size: 4.8rem;
 }
 h2 {
-  font-size: 4rem;
+  font-size: clamp(
+    3rem,
+    7vw,
+    4rem
+  ); /*para que entren los 3 iconos del menu(proviene de la carpeta menu.css) en diferentes vw*/
 }
 h3,
 h5 {
@@ -73,15 +76,14 @@ img {
   padding: 0;
 }
 
-
 /*------------------Header------------------*/
 .header {
   height: 100vh;
-  background-size: cover;
+  background-size:cover;
   background-repeat: no-repeat;
   background-position: center center;
-  /* backface-visibility: hidden; */
-  animation: header 50s linear infinite 3s;
+  backface-visibility: hidden;
+  animation: header 50s infinite linear;
   animation-timing-function: ease-in-out;
   background-image: url("../img/zyro-image.png");
 }
@@ -93,48 +95,53 @@ img {
     background-image: url("../img/categoria.jpg");
   }
   50% {
-    background-image: url("../img/membresia.jpg");
+    background-image: url("../img/blog3.jpg");
   }
   75% {
-    background-image: url("../img/banner.jpg");
+    background-image: url("../img/blog1.jpg");
   }
   100% {
-    background-image: url("../img/curso1.jpg");
+    background-image: url("../img/zyro-image.png");
   }
+}
+
+.logo__size {
+  height: 63px;
+  margin-left: 20px;
 }
 
 .header__texto {
   text-align: center;
   color: var(--blanco);
-  margin-top: 35vh;
+  margin-top: 26vh; /*para que entren los 3 iconos del menu(proviene de la carpeta menu.css), antes era 35vh*/
   position: absolute;
   width: 100%;
 }
 
-.barra {  /* version movil */
+.barra {
+  /* version movil */
   padding: 1.5rem 0;
   justify-content: center;
-  height: 10%;
-  
+  height: 16%;
 }
 
-@media (min-width: 980px) { /* a partir de 980px esto */
+@media (min-width: 980px) {
+  /* a partir de 980px esto */
   .barra {
     display: flex;
     justify-content: space-between;
     height: max-content;
     padding: 0 2rem;
   }
-  
 }
 
-@media (min-width: 1240px) { /* a partir de 1240px esto */
+@media (min-width: 1240px) {
+  /* a partir de 1240px esto */
   .barra {
     display: flex;
     justify-content: space-evenly;
     height: max-content;
   }
-  
 }
 .logo {
   display: block;
@@ -151,8 +158,9 @@ img {
 
 @media (min-width: 980px) {
   .navegacion {
-    justify-content: flex-end;
     display: flex;
+    justify-content: flex-end;
+
     gap: 2rem;
   }
 }
@@ -162,7 +170,7 @@ img {
   justify-content: flex-end;
   gap: 2rem;
 }
- 
+
 .entrada {
   border-bottom: 1px solid var(--gris);
   margin-bottom: 2rem;
@@ -231,11 +239,20 @@ img {
 
 .footer {
   background-color: var(--negro);
-  padding:3rem 0;
-  margin-top: 0;
+  padding: 3rem 0;
+  /* margin-top: 3rem; */
 }
 
-.logo__footer{
+.copyright {
+  color: #ffffff;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column-reverse;
+  font-size: smaller;
+}
+
+.logo__footer {
   text-align: center;
   width: auto;
 }
@@ -252,6 +269,7 @@ img {
   display: flex;
   justify-content: center;
   gap: 2rem;
+  flex-wrap: wrap;
 }
 
 /*Sobre Nosotros*/
@@ -326,41 +344,14 @@ img {
   height: 20rem;
 }
 
-/*INFORMACION DE LA IMG*/
-
-.entrada__imagen picture img {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  transition: all 500ms ease-out;
-}
-
-.entrada__imagen picture .capa {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #0000005f;
-  color: #ffffff;
-  transition: all 500ms ease-out;
-  opacity: 0;
-  visibility: hidden;
-  text-align: center;
-}
-
-.entrada__imagen picture:hover > .capa {
-  opacity: 1;
-  visibility: visible;
-}
-
 /*MENU HAMBURGUESA*/
 
-.mostrar-background{
+.mostrar-background {
   width: 100vw;
   height: 80%;
-  background: #555
+  background: #555;
 }
-.nav-bar{
+.nav-bar {
   padding: 20px;
   display: block;
   color: white;
@@ -373,48 +364,49 @@ img {
   right: 25px;
 }
 
-.menu{
+.menu {
   background: #555;
   width: 100%;
   margin-top: -100vh;
   transition: all 0.3s;
 }
 
-.menu__link{
+.menu__link {
   display: block;
   padding: 20px;
   color: white;
-  font-size: 1.2em ;
+  font-size: 1.2em;
   text-decoration: none;
 }
 
-.menu__link:hover{
+.menu__link:hover {
   background: #444;
 }
 
-.mostrar{
+.mostrar {
   margin-top: 0;
   flex-direction: column;
 }
 
-@media(min-width: 980px) {
+@media (min-width: 980px) {
   .nav-bar {
     display: none;
   }
+
   .menu {
     width: 50%;
     margin: 0;
     display: flex;
     background-color: transparent;
   }
-  .menu__link{
+  .menu__link {
     display: block;
     padding: 10px;
     color: white;
-    font-size: 2rem ;
+    font-size: 2rem;
     text-decoration: none;
   }
-  .menu__link:hover{
+  .menu__link:hover {
     background: transparent;
   }
 }

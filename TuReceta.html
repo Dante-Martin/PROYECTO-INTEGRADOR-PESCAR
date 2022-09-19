@@ -45,10 +45,13 @@
             <span class="nav-bar" id="btnMenu"><i class="fa-solid fa-bars"></i></span>
 
             <nav class="navegacion topbar menu" id="menu">
+                <a href="nosotros.html" class="navegacion__enlace menu__item"><span
+                        class="menu__link">Nosotros</span></a>
+                <a href="nutricion.html" class="navegacion__enlace menu__item"><span
+                        class="menu__link">Nutrición</span></a>
+                <a href="donacion.html" class="navegacion__enlace menu__item"><span
+                        class="menu__link">Beneficencia</span></a>
                 <a href="login.html" class="navegacion__enlace menu__item"><span class="menu__link">Login</span></a>
-                <a href="nosotros.html" class="navegacion__enlace menu__item"><span class="menu__link">Nosotros</span></a>
-                <a href="membresia.html" class="navegacion__enlace menu__item"><span class="menu__link">Membresia</span></a>
-                <a href="index.html" class="navegacion__enlace menu__item"><span class="menu__link">Menu</span></a>
             </nav>
         </div>
         <div class="header__texto">
@@ -115,8 +118,8 @@
                 </h1>
             </a> -->
             <nav class="nav-footer topbar">
-                <a href="donacion.html" class="navegacion__enlace"><span>Donacion</span></a>
-                <a href="salud.html" class="navegacion__enlace"><span>Salud y Nutricion</span></a>
+                <a href="membresia.html" class="navegacion__enlace"><span>Membresia</span></a>
+                <a href="nutricion.html" class="navegacion__enlace"><span>Salud y Nutricion</span></a>
                 <a href="contacto.html" class="navegacion__enlace"><span>Contacto</span></a>
             </nav>
             <span class="copyright">&#169; 2022 PURA_SANGRE papá!!</span>
@@ -127,6 +130,7 @@
     <script src="js/recetas.js"></script>
     <script>
         document.getElementById('nombre').innerHTML = localStorage.getItem('nombre'); //agarro el nombre del array recetas con set item y lo traigo a esta pagina con get-item y lo pongo en la id nombre de h2
+        nombre.style.textTransform = "uppercase";
         // ---------------------------------
 
         let cantidadIngrediente = 0;

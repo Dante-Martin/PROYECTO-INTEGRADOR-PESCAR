@@ -3,7 +3,8 @@
     margin: 0 auto;
     max-width: 1250px;
     flex-wrap: wrap;
-   
+    max-height: 375px;
+    overflow-y: scroll;
 }
 .fondo{
     background-color:#34375943;
@@ -26,6 +27,7 @@
     text-decoration: dashed;
     text-transform: uppercase;
     border-radius: 50px;
+    
 }
 
 .boton_Donacion_Mp {
@@ -61,5 +63,5 @@
     transition: 0.2 all;
 }
 .pablo{
-    margin-top: 26vh !important;
+    margin-top: 9vh !important;
 }

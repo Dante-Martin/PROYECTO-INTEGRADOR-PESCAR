@@ -1,190 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>El comienzo de algo grande</title>
 
-    <!--Prefetch-->
-    <link rel="prefetch" href="nosotros.html" as="document" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>El comienzo de algo grande</title>
 
-    <!--link estilo2-->
-    <link rel="stylesheet" href="css/estilo2.css" />
+  <!--Prefetch-->
+  <link rel="prefetch" href="nosotros.html" as="document" />
 
-    <!--link membresia.css-->
-    <link rel="prefetch" href="css/membresia.css" as="membresia" />
-    <link rel="stylesheet" href="css/membresia.css" />
+  <!--link estilo2-->
+  <link rel="stylesheet" href="css/estilo2.css" />
 
-    <!--Link Preload-->
-    <link rel="prereload" href="css/normalize.css" as="style" />
-    <link rel="stylesheet" href="css/normalize.css" />
+  <!--link membresia.css-->
+  <link rel="prefetch" href="css/membresia.css" as="membresia" />
+  <link rel="stylesheet" href="css/membresia.css" />
 
-    <!--Link fuente Noto Serif italica-->
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&display=swap"
-      rel="stylesheet"
-    />
-    <!--Link fuente Noto Serif -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap"
-      rel="stylesheet"
-    />
+  <!--Link Preload-->
+  <link rel="prereload" href="css/normalize.css" as="style" />
+  <link rel="stylesheet" href="css/normalize.css" />
 
-    <!-- <link rel="prereload" href="css/style.css" as="style">-->
-    <link rel="stylesheet" href="css/style.css" />
+  <!--Link fuente Noto Serif italica-->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&display=swap" rel="stylesheet" />
+  <!--Link fuente Noto Serif -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet" />
 
-    <!--script iconos-->
-    <script src="https://kit.fontawesome.com/4fcd992977.js" crossorigin="anonymous"></script>
+  <!-- <link rel="prereload" href="css/style.css" as="style">-->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!--script iconos-->
+  <script src="https://kit.fontawesome.com/4fcd992977.js" crossorigin="anonymous"></script>
 
 </head>
 
 <body>
-    <header class="header" id="slide1">
-      <div class="pegado barra" id="background">
-        <a class="logo" href="index.html">
-          <h1 class="logo__nombre no-margin ">
-            <!-- Your<span class="logo__bold">Time</span> -->
-            <img src="img/Logo.png" class="logo__size">
-          </h1>
-        </a>
-  
-        <span class="nav-bar" id="btnMenu"><i class="fa-solid fa-bars"></i></span>
-  
-        <nav class="navegacion topbar menu" id="menu">
-            <a href="login.html" class="navegacion__enlace menu__item"><span class="menu__link">Login</span></a>
-            <a href="nosotros.html" class="navegacion__enlace menu__item"><span class="menu__link">Nosotros</span></a>
-            <a href="membresia.html" class="navegacion__enlace menu__item"><span class="menu__link">Membresia</span></a>
-            <a href="index.html" class="navegacion__enlace menu__item"><span class="menu__link">Menu</span></a>
-        </nav>
+  <header class="header" id="slide1">
+    <div class="pegado barra" id="background">
+      <a class="logo" href="index.html">
+        <h1 class="logo__nombre no-margin ">
+          <!-- Your<span class="logo__bold">Time</span> -->
+          <img src="img/Logo.png" class="logo__size">
+        </h1>
+      </a>
+
+      <span class="nav-bar" id="btnMenu"><i class="fa-solid fa-bars"></i></span>
+
+      <nav class="navegacion topbar menu" id="menu">
+        <a href="nosotros.html" class="navegacion__enlace menu__item"><span class="menu__link">Nosotros</span></a>
+        <a href="nutricion.html" class="navegacion__enlace menu__item"><span class="menu__link">Nutrición</span></a>
+        <a href="donacion.html" class="navegacion__enlace menu__item"><span class="menu__link">Beneficencia</span></a>
+        <a href="login.html" class="navegacion__enlace menu__item"><span class="menu__link">Login</span></a>
+      </nav>
+    </div>
+    <div class="header__texto">
+      <!--se encarga pablito de que quede bien en pantallas de celulares-->
+      <h2 class="no-margin">Las Mejores Recetas</h2>
+      <p class="no-margin">Aprende de los expertos con las mejores recetas y consejos</p>
+
+    </div>
+
+  </header>
+
+  <ul class="menu_desplazamiento">
+    <li>
+      <a href="#slide1"></a>
+    </li>
+    <li>
+      <a href="#slide2"></a>
+    </li>
+    <li>
+      <a href="#slide3"></a>
+    </li>
+  </ul>
+
+  <main class="scroll-container">
+    <section class="contenedor_tabla" id="slide2">
+
+      <div class="tabla_precio">
+        <h2>standard</h2>
+        <div class="star_tabla">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+        <h3>100 <sub>$</sub></h3>
+        <p>Paga ahora y recibe un 30% de descuento</p>
+        <p>Paga ahora y recibe un 30% de descuento</p>
+        <a href="#" class="boton_precio">Pagar Ahora</a>
       </div>
-        <div class="header__texto">
-            <!--se encarga pablito de que quede bien en pantallas de celulares-->
-            <h2 class="no-margin">Las Mejores Recetas</h2>
-            <p class="no-margin">Aprende de los expertos con las mejores recetas y consejos</p>
-
+      <div class="tabla_precio">
+        <h2>Premium</h2>
+        <div class="star_tabla">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
         </div>
-        
-    </header>
+        <h3>500 <sub>$</sub></h3>
+        <p>Paga ahora y recibe un 30% de descuento</p>
+        <p>Paga ahora y recibe un 30% de descuento</p>
+        <a href="#" class="boton_precio">Pagar Ahora</a>
+      </div>
+    </section>
 
-    <ul class="menu_desplazamiento">
-      <li>
-        <a href="#slide1"></a>
-      </li>
-      <li>
-        <a href="#slide2"></a>
-      </li>
-      <li>
-        <a href="#slide3"></a>
-      </li>
-    </ul>
+    <section class="contenedor_comparacion" id="slide3">
+      <table class="tabla_comparacion">
+        <tr>
+          <td class="none_tabla"></td>
+          <td>FREE</td>
+          <td>standard</td>
+          <td>Premium</td>
+        </tr>
+        <tr>
+          <td>Opcion1</td>
+          <td><i class="fa-solid fa-circle-check"></i></td>
+          <td><i class="fa-solid fa-circle-check"></i></td>
+          <td><i class="fa-solid fa-circle-check"></i></td>
+        </tr>
+        <tr>
+          <td>Opcion2</td>
+          <td><i class="fa-solid fa-circle-check"></i></td>
+          <td><i class="fa-solid fa-circle-check"></i></td>
+          <td><i class="fa-solid fa-circle-check"></i></td>
+        </tr>
+        <tr>
+          <td>Opcion3</td>
+          <td>-</i></td>
+          <td><i class="fa-solid fa-circle-check"></i></td>
+          <td><i class="fa-solid fa-circle-check"></i></td>
+        </tr>
+        <tr>
+          <td>Opcion4</td>
+          <td>-</td>
+          <td><i class="fa-solid fa-circle-check"></i></td>
+          <td><i class="fa-solid fa-circle-check"></i></td>
+        </tr>
+        <tr>
+          <td>Opcion5</td>
+          <td>-</td>
+          <td>-</i></td>
+          <td><i class="fa-solid fa-circle-check"></i></td>
+        </tr>
+        <tr>
+          <td>Opcion6</td>
+          <td>-</td>
+          <td>-</i></td>
+          <td><i class="fa-solid fa-circle-check"></i></td>
+        </tr>
+        <tr>
+          <td class="none_tabla"></td>
+          <td>-</td>
+          <td>$100</td>
+          <td>$500</td>
+        </tr>
+      </table>
+    </section>
 
-    <main class="scroll-container">
-      <section class="contenedor_tabla" id="slide2">
-        
-        <div class="tabla_precio">
-          <h2>standard</h2>
-          <div class="star_tabla">
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-          </div>
-          <h3>100 <sub>$</sub></h3>
-          <p>Paga ahora y recibe un 30% de descuento</p>
-          <p>Paga ahora y recibe un 30% de descuento</p>
-          <a href="#" class="boton_precio">Pagar Ahora</a>
-        </div>
-        <div class="tabla_precio">
-          <h2>Premium</h2>
-          <div class="star_tabla">
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-          </div>
-          <h3>500 <sub>$</sub></h3>
-          <p>Paga ahora y recibe un 30% de descuento</p>
-          <p>Paga ahora y recibe un 30% de descuento</p>
-          <a href="#" class="boton_precio">Pagar Ahora</a>
-        </div>
-      </section>
+  </main>
 
-      <section class="contenedor_comparacion" id="slide3">
-          <table class="tabla_comparacion">
-            <tr>
-              <td class="none_tabla"></td>
-              <td>FREE</td>
-              <td>standard</td>
-              <td>Premium</td>
-            </tr>
-            <tr>
-              <td>Opcion1</td>
-              <td><i class="fa-solid fa-circle-check"></i></td>
-              <td><i class="fa-solid fa-circle-check"></i></td>
-              <td><i class="fa-solid fa-circle-check"></i></td>
-            </tr>
-            <tr>
-              <td>Opcion2</td>
-              <td><i class="fa-solid fa-circle-check"></i></td>
-              <td><i class="fa-solid fa-circle-check"></i></td>
-              <td><i class="fa-solid fa-circle-check"></i></td>
-            </tr>
-            <tr>
-              <td>Opcion3</td>
-              <td>-</i></td>
-              <td><i class="fa-solid fa-circle-check"></i></td>
-              <td><i class="fa-solid fa-circle-check"></i></td>
-            </tr>
-            <tr>
-              <td>Opcion4</td>
-              <td>-</td>
-              <td><i class="fa-solid fa-circle-check"></i></td>
-              <td><i class="fa-solid fa-circle-check"></i></td>
-            </tr>
-            <tr>
-              <td>Opcion5</td>
-              <td>-</td>
-              <td>-</i></td>
-              <td><i class="fa-solid fa-circle-check"></i></td>
-            </tr>
-            <tr>
-              <td>Opcion6</td>
-              <td>-</td>
-              <td>-</i></td>
-              <td><i class="fa-solid fa-circle-check"></i></td>
-            </tr>
-            <tr>
-              <td class="none_tabla"></td>
-              <td>-</td>
-              <td>$100</td>
-              <td>$500</td>
-            </tr>
-          </table>
-      </section>
-
-    </main>
-
-    <footer class="footer">
-      <div class="barra">
-          <!-- <a class="logo logo__footer" href="index.html">
+  <footer class="footer">
+    <div class="barra">
+      <!-- <a class="logo logo__footer" href="index.html">
               <h1 class="logo__nombre no-margin centrar-texto">
                   Your<span class="logo__bold">Time</span>
               </h1>
           </a> -->
-          <nav class="nav-footer topbar">
-              <a href="donacion.html" class="navegacion__enlace"><span>Donacion</span></a>
-              <a href="salud.html" class="navegacion__enlace"><span>Salud y Nutricion</span></a>
-              <a href="contacto.html" class="navegacion__enlace"><span>Contacto</span></a>
-          </nav>
-          <span class="copyright">&#169; 2022 PURA_SANGRE papá!!</span>
+      <nav class="nav-footer topbar">
+        <a href="membresia.html" class="navegacion__enlace"><span>Membresia</span></a>
+        <a href="salud.html" class="navegacion__enlace"><span>Salud y Nutricion</span></a>
+        <a href="contacto.html" class="navegacion__enlace"><span>Contacto</span></a>
+      </nav>
+      <span class="copyright">&#169; 2022 PURA_SANGRE papá!!</span>
 
-      </div>
-    </footer>
+    </div>
+  </footer>
 
-    <script src="js/acciones.js"></script>
+  <script src="js/acciones.js"></script>
 
 </body>
 

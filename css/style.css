@@ -123,7 +123,7 @@ img {
   /* version movil */
   padding: 1.5rem 0;
   justify-content: center;
-  height: 16%;
+  height: 10%;
 }
 
 @media (min-width: 980px) {

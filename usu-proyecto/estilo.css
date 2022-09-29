@@ -1,0 +1,97 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+body{
+    background-color:rgb(207, 204, 201)
+}
+
+header{
+    text-align: center;
+    background-color: rgb(13, 13, 14); 
+    
+    
+}
+.logo-usu{
+    height:70px;
+    float: left;
+    margin: 5px
+    
+}
+a{
+    color: rgb(249, 239, 226);
+
+}
+li{
+    text-align: end;
+    padding: 5px;
+    margin: 0px;
+    list-style: none;
+    font-size: 19px;
+    
+
+}
+
+h1{
+    text-align: center;
+    font-size: 170%;
+    padding-top: 0px;
+    color: rgb(249, 246, 242);
+}
+
+
+    
+.perfil-usu{
+    border-radius: 100%;
+    margin-right: 100px;
+    
+    
+}
+
+h3{
+ text-align:center;  
+  padding-top: 50px;
+  
+}
+
+.recetas-cont{
+ display: inline-flex;
+ flex-wrap: wrap;
+ justify-content: center;
+ 
+ 
+}
+
+.recetas{
+    width: 300px;
+    padding: 10px;
+ 
+    
+}
+
+.email{
+
+    color:rgb(27, 11, 203);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    display: inline-block;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 40px;
+   
+} 
+
+.icons-mail{
+    width: 40px;
+    height: 40px;    
+    margin-top: 0px;
+    display: inline-block;
+   
+    
+
+}
+
+
+
+
+
+

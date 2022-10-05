@@ -88,6 +88,18 @@ img {
   background-image: url("../img/zyro-image.png");
   /* background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)); */
 }
+
+.header3 {
+  height: 10vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  backface-visibility: hidden;
+  animation: header 50s infinite linear;
+  animation-timing-function: ease-in-out;
+  background-image: url("../img/zyro-image.png");
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)); */
+}
 @keyframes header {
   0% {
     background-image: url("../img/zyro-image.png");

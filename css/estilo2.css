@@ -20,6 +20,14 @@ body::-webkit-scrollbar-thumb {
 body {
   font-family: "Noto Serif", serif;
 }
+.contenedor_Donacion2::-webkit-scrollbar {
+  width: 9px;
+  background-color: rgb(24, 23, 23);
+}
+.contenedor_Donacion2::-webkit-scrollbar-thumb {
+  background-color: rgb(85, 83, 83);
+  border-radius: 50px;
+}
 
 /* -----------------en el header-------------- */
 

@@ -1,117 +1,115 @@
 /*MEMBRESIA.HTML TABLA DE PRECIOS*/
 
+
+.scroll-container{
+  background-color: bisque;
+}
+
 .contenedor_tabla{
-    width: 70%;
-    max-width: 900px;
-    margin: auto;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 10px 30px;
-  }
-  
-  .tabla_precio{
-    width: 400px;
-    height: 550px;
-    margin: auto;
-    border: 1px solid var(--gris);
-    border-radius: 4px;
-    box-shadow: 0px 0px 4px 0px var(--gris);
-    padding: 60px;
-    text-align: center;
-    color: #343759;
-    
-  }
-  
-  .tabla_precio h2 {
-    display: block;
-    font-size: 40px;
-    margin:0 0 35px 0;
-  }
-  
-  .tabla_precio h3{
-    font-size: 40px;
-    margin-bottom: 20px;
-  }
-  
-  .tabla_precio > p {
-    display: block;
-    margin-bottom: 20px;
-  }
-  
-  .boton_precio{
-    display: inline-block;
-    width: 150px;
-    padding: 12px;
-    background: #a5f059;
-    text-decoration: none;
-    color: #343759;
-    border-radius: 100px;
-    text-align: center;
-    font-size: 14px;
-    font-weight: 600;
-    margin: auto;
-  }
-  
-  .tabla_precio:hover {
-    background: #343759;
-    color: var(--blanco);
-    transition: 0.2 all;
-    transform: scale(1.1);
-    cursor: pointer;
-  }
-  
-  /*Segunda Tabla*/
-  
-  .contenedor_comparacion{
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-  }
-  
-  .tabla_comparacion{
-    margin: auto;
-    width: min(1250px, 100%);
-  }
-  
-  .tabla_comparacion tr{
-    border-collapse: collapse;
-  }
-  
-  .tabla_comparacion,
-  .tabla_comparacion tr,
-  .tabla_comparacion td{
-    padding: 2rem;
-    border: 1px solid var(--negro);
-    border-collapse: collapse;
-    text-align: center;
-  }
-  
-  .none_tabla{
-    border: none;
-  }
+  width: 70%;
+  max-width: 900px;
+  margin: auto;
+  padding: 50px 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px 30px;
+}
 
-  /*Desplazamiento*/
-
-  html{
-    scroll-behavior: smooth;
-    overflow: auto;
-    scroll-snap-type: y mandatory;
-    
-  }
-
-  header,
-  .contenedor_tabla,
-  .contenedor_comparacion,
-  footer{
-    scroll-snap-align: start;
-    scroll-snap-stop: always;
-  }
+.tabla_precio{
+  width: 400px;
+  height: 550px;
+  margin: auto;
+  border: 1px solid #343759;
+  border-radius: 4px;
+  box-shadow: 0px 0px 4px 0px #343759;
+  padding: 60px;
+  text-align: center;
+  color: #343759;
   
+}
+
+.tabla_precio h2 {
+  display: block;
+  font-size: 40px;
+  margin:0 0 35px 0;
+}
+
+.tabla_precio h3{
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.tabla_precio > p {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.boton_precio{
+  display: inline-block;
+  width: 150px;
+  padding: 12px;
+  background: #a5f059;
+  text-decoration: none;
+  color: #343759;
+  border-radius: 100px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  margin: auto;
+}
+
+.tabla_precio:hover {
+  background: #343759;
+  color: var(--blanco);
+  transition: 0.2 all;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+/*Segunda Tabla*/
+
+.contenedor_comparacion{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.tabla_comparacion{
+  margin: auto;
+  width: min(1250px, 100%);
+}
+
+.tabla_comparacion tr{
+  border-collapse: collapse;
+}
+
+.tabla_comparacion,
+.tabla_comparacion tr,
+.tabla_comparacion td{
+  padding: 2rem;
+  border: 1px solid var(--negro);
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.none_tabla{
+  border: none;
+}
+
+/*Desplazamiento*/
+
+html{
+  scroll-behavior: smooth;
+  overflow: auto;
+  scroll-snap-type: y mandatory;
+  
+}
+
 
 /*BOTON DESPLAZAMIENTO*/
 

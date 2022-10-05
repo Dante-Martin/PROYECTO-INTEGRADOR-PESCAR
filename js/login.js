@@ -9,3 +9,14 @@ document.addEventListener('click', e => {
         $signUp.classList.toggle('active')
     }
 });
+
+  
+
+function alerta() {
+    let nombre= document.getElementById("nombre").value
+    localStorage.setItem("nombreUsuario",nombre||"Mercedes")
+    alert("logrado")
+    location.href="/index.html"
+}
+
+

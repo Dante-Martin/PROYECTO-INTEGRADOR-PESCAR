@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>El comienzo de algo grande</title>
+
+  <!-- imagenes para la ventana de google con favicon-->
+  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <!--Prefetch-->
+  <link rel="prefetch" href="nosotros.html" as="document" />
+
+  <!--link estilo2-->
+  <link rel="stylesheet" href="css/estilo2.css" />
+
+  <!--Link Preload-->
+  <link rel="prereload" href="css/normalize.css" as="style" />
+  <link rel="stylesheet" href="css/normalize.css" />
+
+  <!--Link fuente Noto Serif italica-->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&display=swap" rel="stylesheet" />
+  <!--Link fuente Noto Serif -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet" />
+
+
+  <!-- <link rel="prereload" href="css/style.css" as="style">-->
+  <link rel="stylesheet" href="css/style.css" />
+
+</head>
+
+<body>
+  <header>
+    <div class="pegado barra" id="background">
+      <a class="logo" href="index.html">
+        <h1 class="logo__nombre no-margin ">
+          <!-- Your<span class="logo__bold">Time</span> -->
+          <img src="img/Logo.png" class="logo__size">
+        </h1>
+      </a>
+
+      <span class="nav-bar" id="btnMenu"><i class="fa-solid fa-bars"></i></span>
+
+      <nav class="navegacion topbar menu" id="menu">
+        <a href="index.html" class="navegacion__enlace menu__item"><span class="menu__link">Inicio</span></a>
+        <a href="donacion.html" class="navegacion__enlace menu__item"><span class="menu__link">Beneficencia</span></a>
+        <a href="login.html" class="navegacion__enlace menu__item"><span class="menu__link">Login</span></a>
+        <a href="nosotros.html" class="navegacion__enlace menu__item"><span class="menu__link">Nosotros</span></a>
+      </nav>
+    </div>
+    <div class="header__texto">
+      <h2 class="no-margin">Elegir por tiempo, ingredientes o plato</h2>
+      <!--<p class="no-margin">filtrar por tiempo, ingredientes o plato</p>
+      </div>-->
+
+  </header>
+
+  <div class="slider">
+    <input type="radio" name="slider" checked />
+    <div class="slider__content">
+      <img class="sliderimg" src="./img/nutrislider.jpg" />
+      <div class="slider__description">
+        <h4 class="nutriciontitulos">Nutrición y buena alimentación: dieta equilibrada, vida sana.</h4>
+        <p class="nutricionsub">Uno de nuestros objetivos aparte de ayudar a diferentes comedores tambien es promover la
+          salud. Nuestra nutrición es un proceso de como nuestro organismo metaboliza los alimentos que ingerimos. <br>
+          Es por eso que aparte de nuestras recetas aqui te dejamos una lista de alimentos que deberias consumir ya que
+          son ricas en nutrientes.
+        </p>
+
+      </div>
+    </div>
+    <input type="radio" name="slider" />
+    <div class="slider__content">
+      <img class="sliderimg" src="./img/fruit.jpg" />
+      <div class="slider__description">
+        <h5 class="nutriciontitulos">FRUTAS Y VERDURAS</h5>
+        <p class="nutricionsub">Su ingesta al día aporta vitaminas, sales minerales, antioxidantes y fibra; además es
+          baja en calorías y favorece la eliminación de toxinas del organismo. “Las frutas y verduras aportan
+          especialmente la vitamina A y C, son fundamentales para la prevención de enfermedades”,</p>
+
+
+      </div>
+    </div>
+    <input type="radio" name="slider" />
+    <div class="slider__content">
+      <img class="sliderimg" src="./img/clasificacioncereales.jpg" />
+      <div class="slider__description">
+        <h5 class="nutriciontitulos">CEREALES</h5>
+        <p class="nutricionsub">Los cereales son, por excelencia, fuente principal de energía que el organismo necesita
+          para realizar actividades diarias, y también son fuente importante de fibra cuando se consumen enteros. Entre
+          los nutrimentos que contienen los cereales encontramos vitaminas, minerales, fibra e hidratos de carbono.</p>
+
+
+      </div>
+    </div>
+    <input type="radio" name="slider" />
+    <div class="slider__content">
+      <img class="sliderimg" src="./img/lacteos.jpg" />
+      <div class="slider__description">
+        <h5 class="nutriciontitulos">LACTEOS</h5>
+        <p class="nutricionsub">Los productos lácteos como la leche, el yogur y el queso, son alimentos de elevada
+          densidad nutricional que aportan proteínas de alto valor biológico, hidratos de carbono, fundamentalmente en
+          forma de lactosa, además de grasa, vitaminas, incluidas las del complejo B, y minerales como calcio, magnesio,
+          fósforo y zinc.</p>
+
+      </div>
+    </div>
+    <input type="radio" name="slider" />
+    <div class="slider__content">
+      <img class="sliderimg" src="./img/carnesyproteina.jpg" />
+      <div class="slider__description">
+        <h5 class="nutriciontitulos">CARNES</h5>
+        <p class="nutricionsub">Las proteínas de la carne son macromoléculas imprescindibles para el correcto
+          funcionamiento del organismo, cuya función principal es la formación y reparación de las estructuras
+          corporales. Así, el aporte proteico recomendado en la alimentación diaria oscila entre un 10-15 % del Gasto
+          Energético Total.</p>
+
+      </div>
+    </div>
+
+  </div>
+
+  <footer class="footer">
+    <div class="barra">
+      <!-- <a class="logo logo__footer" href="index.html">
+            <h1 class="logo__nombre no-margin centrar-texto">
+                Your<span class="logo__bold">Time</span>
+            </h1>
+        </a> -->
+      <nav class="nav-footer topbar">
+        <a href="membresia.html" class="navegacion__enlace"><span>Membresia</span></a>
+        <a href="nutricion.html" class="navegacion__enlace"><span>Salud y Nutricion</span></a>
+        <a href="contacto.html" class="navegacion__enlace"><span>Contacto</span></a>
+      </nav>
+      <span class="copyright">&#169; 2022 PURA_SANGRE papá!!</span>
+
+    </div>
+  </footer>
+
+  <!--script iconos-->
+  <script src="https://kit.fontawesome.com/4fcd992977.js" crossorigin="anonymous"></script>
+  <script src="js/recetas.js"></script>
+  <script src="js/acciones.js"></script>
+</body>
+
+</html>

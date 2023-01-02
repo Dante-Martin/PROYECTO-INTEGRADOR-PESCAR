@@ -4,10 +4,13 @@
   background-repeat: no-repeat;
   background-position: center center;
   /* backface-visibility: hidden; */
-  animation: header 50s linear infinite 3s;
-  animation-timing-function: ease-in-out;
-  background-image: url("../img/zyro-image.png");
+  /* animation: header 50s linear infinite 3s; */
+  /* animation-timing-function: ease-in-out; */
+  /* background-image: url("../img/categoria.jpg"); */
+  background-image: url("../img/fondo-procedimientos2.jpg");
+  background-position: bottom;
 }
+
 .logo__size {
   height: 63px;
   margin-left: 20px;
@@ -22,8 +25,17 @@
 .entrada__imagen2 picture img {
   width: 400px;
   margin-top: 5vh;
-
-  transition: all 500ms ease-out;
+  box-shadow: 0.8px 0.3px 36.3px rgba(255, 254, 254, 0.005),
+    2.2px 0.7px 73.8px rgba(250, 249, 249, 0.011),
+    4.2px 1.3px 87.7px rgba(246, 243, 243, 0.017),
+    7.3px 2.3px 94.3px rgba(255, 254, 254, 0.026),
+    11.7px 3.7px 98.1px rgba(254, 251, 251, 0.037),
+    18.2px 5.8px 100.6px rgba(255, 255, 255, 0.053),
+    28.3px 9px 102.3px rgba(255, 254, 254, 0.074),
+    45.6px 14.4px 103.5px rgba(255, 255, 255, 0.105),
+    81.7px 25.9px 104.4px rgba(237, 237, 237, 0.155),
+    180px 57px 105px rgba(0, 0, 0, 0.32);
+  border-radius: 20px;
 }
 .ingredientes {
   display: table;
@@ -32,6 +44,7 @@
   text-align: left;
   margin-top: 5vh;
   list-style: none;
+  color: var(--gris);
 }
 #barraProgreso {
   background-color: rgb(85, 83, 83);
@@ -41,7 +54,7 @@
   min-width: min(65vw, 300px);
 }
 #barra {
-  background-color: #343759;
+  background-color: #931515;
   height: 30px;
   position: absolute;
   width: 0%;
@@ -53,4 +66,14 @@
   justify-content: center;
   flex-direction: column-reverse;
   font-size: smaller;
+}
+p {
+  color: var(--gris);
+}
+body {
+  background-image: url("../img/fondo-procedimientosss.jpg");
+  background-position: center;
+  /* background-size: 100%; */
+  background-size: cover;
+  /* background-repeat: no-repeat; */
 }

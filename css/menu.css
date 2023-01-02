@@ -13,10 +13,10 @@ html {
 
   cursor: pointer;
   pointer-events: all;
-  font-size: 260%;
+  font-size: 310%; /*260%*/
 }
 .icono--boton {
-  font-size: 260%;
+  font-size: 310%;
 }
 .icono--boton:hover {
   transition: 1s;
@@ -24,15 +24,14 @@ html {
   display: block;
 }
 
-
 .iconos-alineados {
-    display: flex;
-    align-items: center;
-    padding-top: 15vh;
-    flex-direction: column;
-    justify-content: space-around;
-    flex-wrap: wrap;
-  }
+  display: flex;
+  align-items: center;
+  padding-top: 5vh;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
 
 @media (min-width: 500px) {
   .tiempo {
@@ -117,6 +116,7 @@ html {
 
   .canasta {
     cursor: pointer;
+    text-transform: lowercase;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -139,6 +139,7 @@ html {
 
   .lupa {
     cursor: pointer;
+    text-transform: lowercase;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -149,11 +150,9 @@ html {
   .iconos-alineados {
     display: flex;
     align-items: flex-start;
-    flex-direction:row;
+    flex-direction: row;
     padding-top: 25vh;
     justify-content: space-around;
-
-
   }
   input[type="text"] {
     /*solo para input y se escribe texto*/
@@ -171,7 +170,7 @@ html {
 
 /*----------------------------RESPONSIVE-----------------------*/
 
-@media (max-width: 460px) {
+@media (max-width: 500px) {
   .label {
     font-size: 200%;
   }
@@ -302,14 +301,14 @@ html {
   }
 }
 
-.entrada:nth-child(1){
-    margin-top: 3rem;
-  }
+.entrada:nth-child(1) {
+  margin-top: 3rem;
+}
 
 @media (min-width: 800px) {
   .entrada:nth-child(1),
   .entrada:nth-child(2),
-  .entrada:nth-child(3){
+  .entrada:nth-child(3) {
     margin-top: 3rem;
   }
 }
